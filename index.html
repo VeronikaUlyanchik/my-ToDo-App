@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task 2</title>
+</head>
+<style>
+    body {
+        background-color: #58b5d7;
+        font-family: 'Urbanist', sans-serif;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Todo App</h2>
+        <form class="js-form">
+            <input type="text" id="inputtask" class="input" placeholder="Add your new todo" required>
+            <button class="button-plus" id="btn_add_task" ><span class="material-icons">
+                add_box
+                </span></button>
+        </form>
+                <div class="todotasks">
+                    <!-- <H1>Here will be your tasks</H1> -->
+                </div>
+                
+            <button id="clearall" class="button-clear" onclick="clearAll()">Clear All</button>
+    </div>
+    <!-- Добвляет таски, но не удаляет  -->
+    <script src="addTask.js"></script>
+    <script src="clearTask.js"></script>
+</body>
+</html>
