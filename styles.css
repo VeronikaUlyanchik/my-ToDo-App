@@ -1,0 +1,111 @@
+
+::-webkit-scrollbar {
+    width: 5px; 
+    height: 4px; 
+    background-color: white;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #8c4be7;
+    border-radius: 9em;
+}
+.material-icons {
+    font-family: Material Icons;
+    color: #8c4be7;
+    font-size: 60px;
+    padding: 0;
+}
+.delete {
+    color: red;
+    font-size: 40px;
+}
+.container {
+    position: relative;
+    top:140px;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+h2 {
+    font-size: 34px;
+    padding:20px 20px;
+}
+.button-plus {
+   padding: 0px;
+   border: none;
+   margin: 0;
+   background-color:white;
+   position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+.button-plus:active{
+    transform: scale(0.9);
+ }
+.button-clear {
+    background-color: #8c4be7;
+    color: white;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 441px;
+    left: 281px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+}
+.button-clear:active{
+   transform: scale(0.9);
+}
+input {
+    margin: 0 10px 0 20px;
+    width: 300px;
+    height: 45px;
+    border-color: #d0baf0;
+    font-size: 18px;
+}
+.js-form {
+    display: flex;
+    flex-direction: row;
+}
+.todotasks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 14px;
+    top: 172px;
+    height: 239px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.tasks {
+    display: flex;
+    background-color: ghostwhite;
+    font-size: 18px;
+    margin: 4px;
+    width: 288px;
+    padding: 10px;
+   white-space: pre-wrap;
+   word-break: break-all;
+}
+.task_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: ghostwhite;
+}
+.button-delete {
+    padding: 0px;
+   border: none;
+   margin: 0;
+   background-color: ghostwhite;
+   cursor: pointer;
+   visibility: hidden;
+}
+.task_button:hover .button-delete{
+    visibility:visible;
+}

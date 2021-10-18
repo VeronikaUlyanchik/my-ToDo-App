@@ -6,11 +6,8 @@ const todoField = document.querySelector('.todotasks')
 
 
 function generateTask(newTask) {
- 
     todoField.innerHTML+= `<div class="tasks task_button"> ${newTask.text} <button class="button-delete"  onclick=deleteTodo(${newTask.id})><span class="material-icons delete">delete</span></button> </div>`
-
 }
-
     const form = document.querySelector('.js-form');
     form.addEventListener('submit', event => {
         event.preventDefault();
